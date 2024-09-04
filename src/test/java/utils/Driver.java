@@ -10,6 +10,7 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.Objects;
 
 public class Driver {
@@ -36,6 +37,7 @@ public class Driver {
                        throw new RuntimeException(e);
                    }
                    driver = new AndroidDriver(url, capsA);
+                   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
                    break;
                case "ios":
                    try {
@@ -44,6 +46,7 @@ public class Driver {
                        throw new RuntimeException(e);
                    }
                    driver = new IOSDriver(url, capsI);
+                   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
                    break;
            }
        }
