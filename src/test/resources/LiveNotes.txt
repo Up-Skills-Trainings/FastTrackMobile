@@ -1,0 +1,31 @@
+Mobile Testing With Appium (Wrapper for Selenium API)
+
+1. What is Mobile Testing?
+
+2. Why do we need to learn Mobile Testing?
+
+3. What tools needed for automation with Appium?
+	- Node.js (Run Environment for JS) - appium server
+	- Appium Server
+	- Java JDK
+	- Android Studio Code for Android
+	- Xcode for IOS automation
+	- Nice to have:
+		- locator tool: Appium Inspector
+		- checking our environment: Appium doctor
+	- Code Editor (IntelliJ or VSC)
+
+
+4. Appium is for both Android and IOS testing
+
+5. What are components of Appium?
+
+  - Appium Client (Dependency/library)
+  - Appium Server (we install it to our PC)
+
+6. What is simulator / emulator
+simulator VM for IOS
+emulator VM for android
+
+
+7. We will create a Test Framework from scratch and automate Wikipedia app
